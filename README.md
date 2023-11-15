@@ -13,7 +13,7 @@ For detailed insights, refer to the associated journal article:
 
 ## Colab Notebook
 
-The demo code and implementation are provided here:
+The code implementation, demo, and tutorial are available here: 
 
 [**Mel2Word_Demo.ipynb**](https://colab.research.google.com/drive/1ZfnloqWUDe4yKqWS3ljde3YUxk5y14Xc?usp=sharing)
 
