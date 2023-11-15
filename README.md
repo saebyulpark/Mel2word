@@ -31,7 +31,7 @@ Tokenization requires a dictionary. You can either use pre-generated dictionarie
 
 Tokenize your melody with the Pre-train or generated dictionary.
 
-##Environmental Setup
+## Environmental Setup
 To run the Mel2Word implementation, ensure that you have the following dependencies installed:
 
 PrettyMIDI: A Python library for handling MIDI files. Install it using pip install pretty_midi.
