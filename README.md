@@ -21,15 +21,16 @@ The code implementation, demo, and tutorial are available here:
 
 ### Mel2Word Representation
 
-Convert your MIDI melodies into Mel2Word representation using the provided Colab notebook. Examples and code snippets are available.
+Convert your MIDI melodies into Mel2Word representations.
 
 ### Mel2Word Dictionaries
 
-Tokenization requires a dictionary. You can either use pre-generated dictionaries or create your own based on your dataset. Examples and code for both scenarios are provided.
+Tokenization requires a dictionary. You can either use pre-generated dictionaries or create your own based on your dataset. 
+Examples and codes for both scenarios are provided.
 
 ### Tokenization
 
-Tokenize your melody with the generated dictionary. Check the Colab notebook for detailed steps.
+Tokenize your melody with the Pre-train or generated dictionary.
 
 ## Contact
 
