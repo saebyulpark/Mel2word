@@ -2,7 +2,7 @@
 
 This repository contains the implementation of Mel2Word, a method designed to convert melodic sequences into text-based representations, enhancing symbolic music analysis through the transformation of melodies into word-like units. The primary aim is to advance symbolic music analysis by introducing a novel segmentation method for tokenization, leveraging Byte-Pair Encoding (BPE) as a widely adopted method for text tokenization.
 
-For in-depth insights, please refer to the associated journal article:
+For in-depth information, please refer to the associated journal article:
 
 **"Mel2Word: A Text-based Melody Representation for Symbolic Music Analysis"**
 
