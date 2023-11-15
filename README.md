@@ -1,9 +1,8 @@
-
 # Mel2Word: Melody to Text Representation
 
-This repository implements Mel2Word, a method for converting melodic sequences into text-based representations for symbolic music analysis. Developed by Saebyul Park, Eunjin Choi, Jeounghoon Kim, and Juhan Nam, Mel2Word offers a unique tokenization approach, capturing the essence of musical phrases through natural language processing.
+This repository contains the implementation of Mel2Word, a pioneering method that leverages Natural Language Processing (NLP) techniques to transform melodies into word-like representations. The main goal is to improve symbolic music analysis by tokenization using Byte-Pair Encoding (BPE), a popular textual tokenization method.
 
-For detailed insights, refer to the associated journal article:
+For in-depth insights, please refer to the associated journal article:
 
 **"Mel2Word: A Text-based Melody Representation for Symbolic Music Analysis"**
 
@@ -21,26 +20,25 @@ The code implementation, demo, and tutorial are available here:
 
 ### Mel2Word Representation
 
-Convert your MIDI melodies into Mel2Word representations.
+Convert MIDI melodies into Mel2Word representations.
 
 ### Mel2Word Dictionaries
 
-Tokenization requires a dictionary. You can either use pre-generated dictionaries or create your own based on your dataset. 
+Tokenization requires a dictionary. Choose between pre-generated dictionaries or create a custom one based on your dataset.
 
 ### Tokenization
 
-Tokenize your melody with the Pre-train or generated dictionary.
-
+Tokenize your melody with the pre-trained or generated dictionary. 
 
 ## Environmental Setup
 
-To run the Mel2Word implementation, ensure that you have the following dependencies installed:
+Ensure the following dependencies are installed to run Mel2Word:
 
 - **PrettyMIDI:** A Python library for handling MIDI files. Install it using `pip install pretty_midi`.
-- **Google Drive Mounting:** If you're using Google Colab, mount your Google Drive to access files seamlessly. Follow the steps provided in the Colab notebook.
+- **Google Drive Mounting:** If using Google Colab, mount your Google Drive for file access. Follow the provided steps in the Colab notebook.
 
 ## Contact
 
-For inquiries, issues, or collaborative research opportunities, contact us at saebyul_park@kaist.ac.kr.
+For inquiries, issues, or collaboration opportunities, reach out to saebyul_park@kaist.ac.kr.
 
 ---
