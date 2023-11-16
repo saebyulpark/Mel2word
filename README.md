@@ -44,7 +44,7 @@ Ensure the following dependencies are installed to run Mel2Word:
 
 The datasets and pre-generated dictionaries used for creating examples in the demo code are available in this GitHub repository.
 
-- **[Pre-generated-dictionary.zip](https://github.com/saebyulpark/Mel2word/blob/d17607cbd0f3e5755d4421e13b6801c19fed647a/Pre-generated-dictionary.zip)**: Contains pre-generated dictionaries used in the Mel2Word method. These dictionaries have been crafted for various features and sizes.
+- **[Pre-generated-dictionary.zip](https://github.com/saebyulpark/Mel2word/blob/d17607cbd0f3e5755d4421e13b6801c19fed647a/Pre-generated-dictionary.zip)**: Contains dictionaries pre-generated using the Mel2Word method, as outlined in the associated journal. The dictionaries were constructed during the training phase, incorporating data from 8 monophonic datasets. In total, 3,007 monophonic melodies were included in the training set to build a comprehensive Mel2Word dictionary.
 
 - **[Example_Datasets.zip](https://github.com/saebyulpark/Mel2word/blob/d17607cbd0f3e5755d4421e13b6801c19fed647a/Example_Datasets.zip)**: Serves as an illustrative example in the Colab demo and is sourced from the Meertens Tune Collection (MTC-ANN). [Reference Link](https://www.liederenbank.nl/mtc/)
 
