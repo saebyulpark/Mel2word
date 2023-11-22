@@ -55,4 +55,4 @@ The datasets and pre-generated dictionaries used for creating examples in the de
 
 ## Contact
 
-For inquiries, issues, or collaboration opportunities, reach out to saebyul_park@kaist.ac.kr.
+For inquiries, issues, or collaboration, reach out to saebyul_park@kaist.ac.kr.
