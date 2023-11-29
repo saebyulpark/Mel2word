@@ -291,7 +291,6 @@ def BPE(db, feat=3, dic_size=100, min_freq=10, max_length=11):
     dictionary = {k: v for k, v in sorted({**bp_stat, **Counter(words)}.items(), key=lambda item: item[1], reverse=True)}
 
 
-    print('Dictionary size too large..building dic with Full-size of', len(dictionary) - bpvocs, 'tokens')
     print('new BPE dictionary was built with', len(dictionary) - bpvocs, 'of tokens and', bpvocs, 'of Morpheme-M2W)')
 
     return dictionary
