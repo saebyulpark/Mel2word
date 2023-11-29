@@ -16,9 +16,13 @@ For in-depth information, please refer to the associated journal article:
 
 The code implementation, demo, and tutorial are available here:
 
-1. [**Mel2Word_Demo.ipynb**](https://colab.research.google.com/drive/1ZfnloqWUDe4yKqWS3ljde3YUxk5y14Xc?usp=sharing): Main Mel2Word demo notebook. This Colab notebook provides a demonstration of Mel2Word with code and examples.
+1. [**Mel2Word_Demo.ipynb**](https://colab.research.google.com/drive/1i-WC0kd1C_JtpRYMxECDQrLu3OCzegf8?usp=sharing): Main Mel2Word demo notebook. This Colab notebook provides a demonstration of Mel2Word with code and examples.
 
-2. [**Mel2Word_Module_Demo.ipynb**](https://colab.research.google.com/drive/1S1BvN-chAODQLlbAk4onI1_wZSKKEKa8?usp=sharing): Module demonstration using mel2word.py for Python module integration.
+
+
+
+2. [**Mel2Word_Module_Demo.ipynb**](https://colab.research.google.com/drive/1WDq1uF2NzODHTgfCR4P0HSdMKU5Y-O0I?usp=sharing): Module demonstration using mel2word.py for Python module integration.
+
 
 ## Mel2Word Features
 
