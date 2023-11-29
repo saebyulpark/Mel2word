@@ -35,8 +35,10 @@ Convert MIDI melodies into Mel2Word representations.
 Tokenization requires a dictionary. Choose between pre-generated dictionaries or create a custom one based on your dataset.
 
 ### Tokenization
+Tokenize your melodies with the pre-trained or generated dictionary.
 
-Tokenize your melody with the pre-trained or generated dictionary.
+### Application
+Try out WordCloud and Word2Vec techniques for your melodies using the Mel2Word approach.
 
 ## Environmental Setup
 
