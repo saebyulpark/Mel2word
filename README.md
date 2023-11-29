@@ -4,6 +4,10 @@ This repository contains the implementation of Mel2Word, a method designed to co
 
 ![Mel2Word Represenation](https://drive.google.com/uc?export=download&id=1Xs9GrKwV6tyube8N2gzkom_a-mVXyTsd)
 
+The notable aspect of this approach is its ability to tokenize melodies in MIDI format using a data-driven approach, making it possible to apply them directly to NLP algorithms, as depicted in the following figure (which is a result of the data analysis in this paper):
+
+![Mel2Word Data Analysis](https://drive.google.com/uc?export=download&id=1tegxqCjHGwCkzCgMu648jIzmvUy45beY)
+
 For in-depth information, please refer to the associated journal article:
 
 **"Mel2Word: A Text-based Melody Representation for Symbolic Music Analysis"**
