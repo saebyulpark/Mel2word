@@ -439,7 +439,7 @@ def get_dictionary_by_occurrence(dictionary, dic_size, min_freq=10, max_length=1
     if dic_size > len(vocs):
         print('Dictionary size too large..Get full-size dictionary of..', len(vocs))
     else:
-        print('Gettinng', len(vocs), 'sized dictionary')
+        print('Getting', len(vocs), 'sized dictionary')
 
     return vocs
 
