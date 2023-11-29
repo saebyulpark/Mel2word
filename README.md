@@ -63,17 +63,10 @@ Mel2Word enables the application of NLP algorithms to analyze music data. Check 
 
 ![Mel2Word Data Analysis](https://drive.google.com/uc?export=download&id=1tegxqCjHGwCkzCgMu648jIzmvUy45beY)
 
-# ## Citation
+## Citation
 
-# For more details, please refer to our journal article [here](link-to-your-article).
+For more details, please refer to our journal article [here].
 
-
----
-
-*Note: This README provides a brief overview of Mel2Word. Detailed information, code, and examples can be found in the provided Colab notebooks.*
-```
-
-Feel free to replace `link-to-your-article` with the actual link to your journal article.
 
 ## Contact
 
