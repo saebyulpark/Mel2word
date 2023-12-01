@@ -405,7 +405,7 @@ def prep_for_bytepair(db, feat):
 
 """##Tokenization
 
-Now that you have a dictionary for tokenization, you can tokenize your melodies based on that dictionary using the function `get_M2W_tokens()` and `get_M2W_token_for_dataset()`.
+Now that you have a dictionary for tokenization, you can tokenize your melodies based on that dictionary using the function `get_M2W_tokens()` and `get_M2W_tokenized_dataset()`.
 """
 
 # @title Code for Tokenization
@@ -574,7 +574,7 @@ def get_M2W_tokens(M2W, dictionary, dic_size=100, feat=3):
 
         return None
 
-def get_M2W_token_for_dataset(data, dictionary, feat=3, dic_size=100, min_num=10, max_length=11):
+def get_M2W_tokenized_dataset(data, dictionary, feat=3, dic_size=100, min_num=10, max_length=11):
     """
     Tokenize Mel2Word representations in a dataset using a custom dictionary.
 
@@ -681,7 +681,7 @@ def get_M2W_token_for_dataset(data, dictionary, feat=3, dic_size=100, min_num=10
 
 """You can tokenize individual melodies that have been converted to Mel2Word (M2W) representations into M2W vocabularies using the `get_M2W_tokens()` function. To extract M2W features from MIDI, you can refer to the `get_M2W_from_midipath()` function above.
 
-You can tokenize the entire dataset using the `get_M2W_tokens_for_dataset` function. To do this, provide the M2W-processed dataset and the generated dictionary. To convert the entire dataset to M2W representations using a data folder path, you can refer to the `get_M2W_dataset()` function mentioned earlier.
+You can tokenize the entire dataset using the `get_M2W_tokenized_dataset` function. To do this, provide the M2W-processed dataset and the generated dictionary. To convert the entire dataset to M2W representations using a data folder path, you can refer to the `get_M2W_dataset()` function mentioned earlier.
 
 Notice that the data is in list format, with tokenized melodies stored under keys like 'token_pitch,' 'token_rhythm,' or 'token_all' based on the feature (pitch, rhythm, or all).
 
