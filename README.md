@@ -57,9 +57,9 @@ The datasets and pre-generated dictionaries used for creating examples in the de
 
 - **Data Example Folder (/Data-example)**: Includes an illustrative example sourced from the Meertens Tune Collection (MTC-ANN), which features Dutch folk melodies. This dataset is provided for users to experiment with the Mel2Word approach in the Colab demo, offering a hands-on experience.
 
-- [**Tokenized_ANN_Example.pkl**](https://github.com/saebyulpark/Mel2word/blob/main/Tokenized_ANN_Example.pkl): A tokenized version of MTC-ANN ('tokenized_MTC_ANN_Example.pkl') using a 100-word dictionary. This data allows users to explore WordCloud and Word2Vec techniques using the Mel2Word approach in the provided Colab demo, facilitating practical experimentation.
+- **Tokenized_ANN_Example.pkl**: A tokenized version of MTC-ANN ('tokenized_MTC_ANN_Example.pkl') using a 100-word dictionary. This data allows users to explore WordCloud and Word2Vec techniques using the Mel2Word approach in the provided Colab demo, facilitating practical experimentation.
 
-- [**mel2word.py**](https://github.com/saebyulpark/Mel2word/blob/main/mel2word.py): A Python module for Mel2Word.
+- **mel2word.py**: A Python module for Mel2Word.
 
 
 ## Data Analysis
