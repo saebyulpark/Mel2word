@@ -53,12 +53,13 @@ Ensure the following dependencies are installed to run Mel2Word:
 
 The datasets and pre-generated dictionaries used for creating examples in the demo code are available in this GitHub repository:
 
+- **Dictionary Folder (/Dictionary)**: Contains pre-generated dictionaries created using the Mel2Word method. These dictionaries were constructed using data from 8 monophonic datasets during the training phase. In total, 3,007 monophonic melodies were used to build a comprehensive Mel2Word dictionary.
 
-- **Dictionary Folder (/Dictionary)**: This folder contains dictionaries pre-generated using the Mel2Word method, as outlined in the associated journal. The dictionaries were constructed during the training phase, incorporating data from 8 monophonic datasets. In total, 3,007 monophonic melodies were included in the training set to build a comprehensive Mel2Word dictionary.
+- **Data Example Folder (/Data-example)**: Includes an illustrative example sourced from the Meertens Tune Collection (MTC-ANN), which features Dutch folk melodies. This dataset is provided for users to experiment with the Mel2Word approach in the Colab demo, offering a hands-on experience.
 
-- **Data Example Folder (/Data-example)**: This folder contains an illustrative example sourced from the Meertens Tune Collection [(MTC-ANN)](https://www.liederenbank.nl/mtc/)., featuring Dutch folk melodies. It includes a tokenized version of MTC-ANN ('tokenized_MTC_ANN_Example.pkl') using a 100-word dictionary. This dataset is designed for users to experiment with WordCloud and Word2Vec techniques using the Mel2Word approach in the provided Colab demo, providing a practical hands-on experience.
+- **Tokenized_ANN_Example.pkl**: A tokenized version of MTC-ANN ('tokenized_MTC_ANN_Example.pkl') using a 100-word dictionary. This data allows users to explore WordCloud and Word2Vec techniques using the Mel2Word approach in the provided Colab demo, facilitating practical experimentation.
 
-- [**mel2word.py**](https://github.com/saebyulpark/Mel2word/blob/main/mel2word.py): Python module for Mel2Word.
+- [**mel2word.py**](https://github.com/saebyulpark/Mel2word/blob/main/mel2word.py): A Python module for Mel2Word.
 
 
 ## Data Analysis
