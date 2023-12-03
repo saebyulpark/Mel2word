@@ -64,7 +64,7 @@ The datasets and pre-generated dictionaries used for creating examples in the de
 
 ## Data Analysis
 
-Mel2Word enables the application of NLP algorithms to analyze music data. Check out the data analysis results depicted in the following figure:
+Mel2Word allows for the use of NLP algorithms in music data analysis. For detailed data analysis results, please refer to our journal as illustrated in the following figures:
 
 ![Mel2Word Data Analysis](https://drive.google.com/uc?export=download&id=1tegxqCjHGwCkzCgMu648jIzmvUy45beY)
 <img src='https://drive.google.com/uc?export=download&id=1prLznCdchPkgyUMFMM5GHKoo5iT-p1vY' width="" height ="" /><br>
