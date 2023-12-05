@@ -44,7 +44,7 @@ Try out WordCloud and Word2Vec techniques for your melodies using the Mel2Word a
 
 Ensure the following dependencies are installed to run Mel2Word:
 
-- **PrettyMIDI:** A Python library for handling MIDI files. Install it using `pip install pretty_midi`.
+- **music21:** A Python library for handling MIDI files. Install it using `pip install music21`.
 - **Google Drive Mounting:** If using Google Colab, mount your Google Drive for file access. Follow the provided steps in the Colab notebook.
 
 ## Attached Files
