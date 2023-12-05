@@ -48,6 +48,14 @@ For further details, please consult the associated paper.
 
 # @title Codes For Mel2Word
 
+from music21 import midi, note, stream
+import numpy as np
+from os import listdir
+from os.path import isfile, join
+from collections import Counter
+import pickle
+import mel2word
+
 
 def get_midi(midi_name, melody_program=0):
     """
