@@ -21,7 +21,7 @@ The code implementation, demo, and tutorial are available here:
 
 
 
-2. [**Mel2Word_Module_Demo.ipynb**](https://colab.research.google.com/drive/1WDq1uF2NzODHTgfCR4P0HSdMKU5Y-O0I?usp=sharing): Module demonstration using mel2word.py for Python module integration.
+2. [**Mel2Word_Module_Demo.ipynb**](https://colab.research.google.com/drive/1W1sxcHIf9FHtDWUXEKX5rnfmQ95S0b4X?usp=sharing): Module demonstration using mel2word.py for Python module integration.
 
 
 ## Mel2Word Features
