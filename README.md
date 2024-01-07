@@ -71,7 +71,7 @@ Mel2Word allows for the use of NLP algorithms in music data analysis. For detail
 
 ## Citation
 
-For more details, please refer to our journal article [here].
+For more details, please refer to our journal article [here](https://journals.sagepub.com/doi/10.1177/20592043231216254).
 
 
 ## Contact
