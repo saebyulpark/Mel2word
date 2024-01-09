@@ -10,7 +10,7 @@ For in-depth information, please refer to the associated journal article:
 
 **Authors:** Saebyul Park, Eunjin Choi, Jeounghoon Kim, and Juhan Nam
 
-**Journal:** Music and Science, 2023 (Accepted for publication)
+**Journal:** Music and Science, 2024 
 
 ## Colab Notebook
 
