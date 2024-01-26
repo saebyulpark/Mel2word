@@ -48,7 +48,7 @@ For further details, please consult the associated paper.
 
 # @title Codes For Mel2Word
 
-from music21 import midi, note, stream
+from music21 import *
 import numpy as np
 from os import listdir
 from os.path import isfile, join
@@ -81,13 +81,19 @@ def get_pitch_interval(melody):
     Calculates pitch intervals from a given melody using music21.
 
     Parameters:
-    - melody (list): The melody notes (music21 notes).
+    - melody (list): The melody notes (music21 notes and chords).
 
     Returns:
     - ndarray: Array of pitch intervals.
     """
-    pitch = [nt.pitch.midi for nt in melody]
-    pitch_interval = np.diff(pitch)
+    pitches = []
+    for nt in melody:
+        if isinstance(nt, chord.Chord):
+            # Use the highest note in the chord
+            pitches.append(nt.sortAscending().pitches[-1].midi)
+        elif hasattr(nt, 'pitch'):
+            pitches.append(nt.pitch.midi)
+    pitch_interval = np.diff(pitches)
     pitchi = np.clip(pitch_interval, -12, 12)
     return pitchi
 
