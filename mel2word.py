@@ -91,6 +91,7 @@ def get_pitch_interval(melody):
         if isinstance(nt, chord.Chord):
             # Use the highest note in the chord
             pitches.append(nt.sortAscending().pitches[-1].midi)
+            print("Ensure the file is a valid monophonic MIDI file. Extracting the melody using the first note...")
         elif hasattr(nt, 'pitch'):
             pitches.append(nt.pitch.midi)
     pitch_interval = np.diff(pitches)
