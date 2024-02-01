@@ -855,7 +855,7 @@ You can use the `Mel2midi` function to convert Mel2Word-encoded melodies into MI
 
 # @title Code for MIDI Generation from Mel2Word
 
-def Mel2midi(song,file_path, first_pitch = 69, first_beat=1, last_beat=4):
+def Mel2midi(song,file_path, first_pitch = 69, last_beat=4):
     """
     Converts a Mel2Word encoded melody into a MIDI file.
 
@@ -876,7 +876,7 @@ def Mel2midi(song,file_path, first_pitch = 69, first_beat=1, last_beat=4):
         formidi+=tmp
 
     get_pitch=[first_pitch]
-    get_beat=[first_beat]
+    get_beat=[]
 
 
     #pitch
