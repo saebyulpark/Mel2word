@@ -183,6 +183,7 @@ def get_M2W_from_midipath(midipath, feature_option=3):
     return m2w_representation
 
 
+
 def get_M2W_dataset(midi_path):
     """
     Generates a Mel2Word dataset from MIDI files in a specified directory.
@@ -194,27 +195,28 @@ def get_M2W_dataset(midi_path):
     - list: A list of dictionaries, each containing Mel2Word data for a MIDI file.
     """
     onlyfiles = [f for f in listdir(midi_path) if isfile(join(midi_path, f))]
-    M2W_dataset = []  # List to store dictionaries containing M2W data
-    feats = ['pitch', 'rhythm', 'all']  # Features to extract
+    M2W_dataset = []
     error_midi_files = []
 
     for idx, midi_name in enumerate(onlyfiles):
-        midi = {'f_name': midi_name}
+        midi_file_path = join(midi_path, midi_name)
         try:
-          for feat in feats:
-              melody = get_midi(join(midi_path, midi_name))
-              # Get M2W representation for the specified feature
-              midi['M2W_' + feat] = get_M2W(melody, feat)
+            melody = get_midi(midi_file_path)
+            midi = {'f_name': midi_name, 
+                    'M2W_pitch': get_M2W(melody, feat='pitch'),
+                    'M2W_rhythm': get_M2W(melody, feat='rhythm'),
+                    'M2W_all': get_M2W(melody, feat='all')}
+            M2W_dataset.append(midi)
 
-          M2W_dataset.append(midi)
-          if (idx + 1) % 100 == 0:
-              print(idx + 1, 'of', len(onlyfiles), 'files..')
+            if (idx + 1) % 1 == 0:
+                print(f"{idx + 1} of {len(onlyfiles)} files processed..")
         except Exception as e:
-          print('ERROR ON', midi_name, '..skipping the file..')
-          error_midi_files.append(midi_name)
+            print(f'ERROR ON {midi_name}: {e}..skipping the file..')
+            error_midi_files.append(midi_name)
 
-    print('Done..for', len(M2W_dataset), 'files..with', len(error_midi_files), 'ERRORS')
-    return M2W_dataset
+    print(f'Done. Processed {len(M2W_dataset)} files with {len(error_midi_files)} errors.')
+    return M2W_dataset 
+
 
 """## Converting MIDI to Mel2Word Format
 
