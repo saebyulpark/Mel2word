@@ -194,7 +194,7 @@ def get_M2W_dataset(midi_path):
     Returns:
     - list: A list of dictionaries, each containing Mel2Word data for a MIDI file.
     """
-    onlyfiles = [f for f in listdir(midi_path) if isfile(join(midi_path, f))]
+    onlyfiles = sorted([f for f in listdir(midi_path) if isfile(join(midi_path, f))])
     M2W_dataset = []
     error_midi_files = []
 
