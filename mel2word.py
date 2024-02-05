@@ -87,15 +87,21 @@ def get_pitch_interval(melody):
     - ndarray: Array of pitch intervals.
     """
     pitches = []
+    found_chords = False  # Track chord objects presence
+
     for nt in melody:
         if isinstance(nt, chord.Chord):
-            # Use the highest note in the chord
             pitches.append(nt.sortAscending().pitches[-1].midi)
-            print("Ensure the file is a valid monophonic MIDI file. Extracting the melody using top notes...")
+            found_chords = True
         elif hasattr(nt, 'pitch'):
             pitches.append(nt.pitch.midi)
+
     pitch_interval = np.diff(pitches)
     pitchi = np.clip(pitch_interval, -12, 12)
+
+    if found_chords:
+        print("Warning: Chord objects detected in music21. Only top notes of chords extracted - chords may indicate polyphony but can also be in monophonic compositions.")
+
     return pitchi
 
 def get_IOI(melody, notequantize=0.25):
