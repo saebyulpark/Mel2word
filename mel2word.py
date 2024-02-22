@@ -190,16 +190,19 @@ def get_M2W_from_midipath(midipath, feature_option=3):
 
 
 
-def get_M2W_dataset(midi_path):
+def get_M2W_dataset(midi_path, log_freq=100):
     """
     Generates a Mel2Word dataset from MIDI files in a specified directory.
 
     Parameters:
     - midi_path (str): The directory path containing MIDI files.
-
+    - log_freq (int): Progress print interval.
+    
     Returns:
     - list: A list of dictionaries, each containing Mel2Word data for a MIDI file.
     """
+
+    print('Preparing...')
     onlyfiles = sorted([f for f in listdir(midi_path) if isfile(join(midi_path, f))])
     M2W_dataset = []
     error_midi_files = []
@@ -214,7 +217,7 @@ def get_M2W_dataset(midi_path):
                     'M2W_all': get_M2W(melody, feat='all')}
             M2W_dataset.append(midi)
 
-            if (idx + 1) % 1 == 0:
+            if (idx + 1) % log_freq == 0:
                 print(f"{idx + 1} of {len(onlyfiles)} files processed..")
         except Exception as e:
             print(f'ERROR ON {midi_name}: {e}..skipping the file..')
