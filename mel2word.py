@@ -632,7 +632,7 @@ def get_M2W_tokens(M2W, dictionary, dic_size=100, feat=3):
     elif feat == 2:
       feat_str = 'Rhythm' if M2W[0].isdigit() and M2Wk.isdigit() else None
     elif feat == 3:
-        feat_str = 'All' if len(M2Wk[0]) > 3 and not M2W.isdigit() else None
+        feat_str = 'All' if len(M2W[0]) > 3 and len(M2Wk) > 3  else None
     else:
         print("Error!!: Please check the feat value.")
         return None
