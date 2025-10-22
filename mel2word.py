@@ -55,6 +55,8 @@ from os.path import isfile, join
 from collections import Counter
 import pickle
 import mel2word
+from music21 import exceptions21
+warnings.filterwarnings("ignore", category=exceptions21.Music21DeprecationWarning)
 
 
 def get_midi(midi_name, melody_program=0):
@@ -62,18 +64,34 @@ def get_midi(midi_name, melody_program=0):
     Extracts the melody from a MIDI file using music21.
 
     Parameters:
-    - midi_name (str): The name of the MIDI file.
-    - melody_program (int, optional): The instrument index in the MIDI file. Defaults to 0.
+    - midi_name (str): Path to the MIDI file.
+    - melody_program (int, optional): The instrument index to extract. Defaults to 0.
 
     Returns:
-    - list: The extracted melody notes.
+    - list: The extracted melody notes (music21 note objects).
     """
+    # Load MIDI file
     mf = midi.MidiFile()
     mf.open(midi_name)
     mf.read()
     mf.close()
+
+    # Convert to music21 stream
     s = midi.translate.midiFileToStream(mf)
-    melody = s.getElementsByClass('Part')[melody_program].flatten().notes
+
+    # Select the target part and flatten
+    part = s.parts[melody_program].flat
+
+    # Merge tied notes (only those connected with tie=True)
+    try:
+        part_merged = part.stripTies(inPlace=False)
+    except Exception:
+        # For older music21 versions
+        part_merged = part.stripTies()
+
+    # Return only notes (ignore rests, expressions, etc.)
+    melody = [n for n in part_merged.notes if n.isNote or isinstance(n, chord.Chord)]
+
     return melody
 
 def get_pitch_interval(melody):
