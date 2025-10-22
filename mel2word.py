@@ -811,8 +811,7 @@ def Get_WordCloud_for_M2W(data, feat):
         plt.show()
 
 # @title Code for Word2Vec
-import gensim
-from gensim.models import Word2Vec
+
 from sklearn.manifold import TSNE
 import matplotlib.pyplot as plt
 import numpy as np
