@@ -55,6 +55,7 @@ from os.path import isfile, join
 from collections import Counter
 import pickle
 import mel2word
+import warnings
 from music21 import exceptions21
 warnings.filterwarnings("ignore", category=exceptions21.Music21DeprecationWarning)
 
